@@ -1,0 +1,147 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+html {
+	scroll-behavior: smooth;
+}
+body {
+	font-family: poppins;
+	background-color: #e0ffe0;
+}
+ul, ul.nav {
+	list-style: none;
+}
+a {
+	text-decoration: none;
+	cursor: pointer;
+	color: inherit;
+}
+header {
+	z-index: 10;
+	width: 100%;	
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	color: #fff;
+	padding: 20px 100px;
+    background-color: #000000e2;
+}
+.logo {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+span {
+	color: #bf0a30;
+}
+header img {
+	width: 70px;
+}
+header ul.nav {	
+	display: flex;
+}
+header ul li {
+	margin: 0 15px;
+}
+header ul li:first-child {
+	margin-left: 0;
+}
+header ul li:hover {
+	color: #bf0a30;
+}
+header ul.nav li:last-child {
+	margin-right: 0;
+}
+@media(max-width:1000px) {
+	header {
+		padding: 20px 50px;
+	}
+}
+@media (max-width:700px) {
+	header {
+		flex-direction: column;
+	}
+	header h2 {
+		margin-bottom: 15px;
+	}
+	header ul.nav li {
+		margin: 0 7px;
+	}
+	.about-right p {
+		display: none;
+	}
+}
+/* Message compiled page */
+p {
+    color: #bf0a30;
+    font-weight: 500;
+}
+section {	
+	display: flex;
+	flex-direction: column;
+    gap: 50px;
+	align-items: center;
+	padding: 110px 100px;
+	color: #000;
+    margin-top: 30px;
+}
+section .tile {
+    font-size: 30px;
+}
+.content {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
+.message {
+    display: flex;
+	flex-direction: column;
+    align-items: center;
+    flex-basis: 25%;
+    margin: 20px 10px;  
+}
+.message i {
+    font-size: 100px;
+}
+
+
+/* live page */
+.broadcast {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;	
+}
+
+.cast {
+    margin-top: 20px;
+    width: 1136px;
+	height: 639px;    
+}
+
+@media(max-width:1136px) {
+	.cast {
+		width: 960px;
+		height: 540px; 
+	}
+}
+@media(max-width:960px) {
+	.cast {
+		width: 760px;
+		height: 427.5px; 
+	}
+}
+@media(max-width:760px) {
+	.cast {
+		width: 512px;
+		height: 288px; 
+	}
+}
+@media(max-width:512px) {
+	.cast {
+		width: 336px;
+		height: 189px; 
+	}
+}
